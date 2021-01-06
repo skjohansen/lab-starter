@@ -26,7 +26,7 @@ steps:
 Step 1: Lav en fil
 - title: Create a markdown file
   description: Click on add file call it `file2.md`
-  event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
+  event: check_run
   actions: # a list of the actions that will occur when the step is triggered by an event
   - type: # the type of action, full list at https://lab.github.com/docs/actions
 
