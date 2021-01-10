@@ -1,8 +1,8 @@
 title: "Communicating using Markdown"
 description: "This course will walk you through everything you need to start organizing ideas and collaborating using Markdown, a lightweight language for text formatting."
 template:
-  name: "markdown-portfolio"
-  repo: "communicating-using-md-template"
+  - name: "markdown-portfolio"
+  - repo: "communicating-using-md-template"
 
 # Repository setup
 # The following section template information for the repository
@@ -20,9 +20,9 @@ before:
 # Create one step for each action that a learner will complete
 
 steps:
-Step 1: Lav en fil
-- title: Create a markdown file
-  description: Click on add file call it `file2.md`
+Step 1: "Lav en fil"
+- title: "Create a markdown file"
+  description: "Make a pull request named Ny fil"
   event: check_run
   actions: # a list of the actions that will occur when the step is triggered by an event
   - type: gate
