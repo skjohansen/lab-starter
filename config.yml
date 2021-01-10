@@ -9,7 +9,6 @@ before:
   with: 01_first-response.md
   
 steps:
-Step 1:
 - title: "Create a markdown file"
   description: "Make a pull request named Ny fil"
   event: check_run
@@ -19,7 +18,6 @@ Step 1:
     operator: ===
     right: Ny fil
 
-Step 2:
 - title: Create a h1 header
   description: Start the file with a `#` and the text of the header
   event: push
