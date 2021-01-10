@@ -27,14 +27,17 @@ Step 1: Lav en fil
   description: Click on add file call it `file2.md`
   event: check_run
   actions: # a list of the actions that will occur when the step is triggered by an event
-  - type: # the type of action, full list at https://lab.github.com/docs/actions
+  - type: gate
+    left: '%payload.pull_request.title%'
+    operator: ===
+    right: Ny fil
 
 Step 2: Lav en header
 - title: Create a h1 header
   description: Start the file with a `#` and the text of the header
   event: push
   actions: # a list of the actions that will occur when the step is triggered by an event
-  - type: # the type of action, full list at https://lab.github.com/docs/actions
+  - type: gate # the type of action, full list at https://lab.github.com/docs/actions
 
 Step 3: Lav en h2
 - title: Create a h2 header
